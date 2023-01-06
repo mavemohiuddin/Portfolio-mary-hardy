@@ -74,3 +74,14 @@ const border_check = (event) => {
         event.target.classList.add("border_red");
     }
 }
+
+// Removing Loading screen
+
+document.addEventListener('readystatechange', (event) => {
+    if (document.readyState == "complete") {
+        setTimeout(() => {
+            select(1, "body").classList.remove("no_scroll");
+            select(1, "overlay").style.display = "none";
+        }, 5000);
+    }
+});
