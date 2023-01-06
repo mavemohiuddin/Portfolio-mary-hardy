@@ -183,8 +183,8 @@ button:has(.btn_secondary) {
     background-color: red;
 }
 .blurred_header {
-    background-color:rgb(255 255 255 / 90%);
-    backdrop-filter: blur(15px);
+    background-color:rgb(255 255 255 / 75%);
+    backdrop-filter: blur(10px);
     height: 100px;
 }
 .blurred_header li {
